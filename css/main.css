@@ -1149,14 +1149,17 @@ ul {
     border-bottom: 1px solid #eee;
     padding: 10px 0;
 }
-.profile-page .skills div{
+
+.profile-page .skills div {
     display: flex;
 }
+
 .profile-page .skills div span {
     display: block;
     width: fit-content;
     margin: 5px 3px;
 }
+
 .profile-page .activity {
     flex-grow: 2;
 }
@@ -1190,3 +1193,120 @@ ul {
 }
 
 /* End Profile */
+/* Start Porject  */
+.project-page {
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 20px;
+}
+
+@media (max-width: 767px) {
+    .project-page {
+        grid-template-columns: minmax(200px, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 10px;
+    }
+}
+
+.project-page .dashbord {
+    padding-left: 20px;
+    position: relative;
+}
+
+.project-page .dashbord .imgs {
+    position: relative;
+    min-height: 80px;
+}
+
+.project-page .dashbord .imgs img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+}
+
+.project-page .dashbord .imgs a {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.project-page .dashbord .imgs a:nth-child(2) {
+    left: 25px;
+}
+
+.project-page .dashbord .imgs a:nth-child(3) {
+    left: 50px;
+}
+
+.project-page .dashbord .imgs a:nth-child(4) {
+    left: 75px;
+}
+
+.project-page .dashbord .imgs a:nth-child(5) {
+    left: 100px;
+}
+
+.project-page .dashbord .imgs a:hover {
+    z-index: 1000;
+}
+
+.project-page .dashbord .do {
+    justify-content: flex-end;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+    margin-top: 15px;
+}
+
+@media (max-width: 767px) {
+    .project-page .dashbord .do {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-page .dashbord .do span {
+        margin-bottom: 10px;
+        width: fit-content;
+    }
+}
+
+.project-page .dashbord .label {
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+    margin-top: 15px;
+}
+
+@media (max-width: 767px) {
+    .project-page .dashbord .label {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-page .dashbord .label div {
+        margin-bottom: 10px;
+    }
+}
+
+.project-page .dashbord .label .prog {
+    border-radius: 6px;
+    height: 7px;
+    width: 200px;
+
+}
+
+.project-page .dashbord .label .prog span {
+    display: block;
+    height: 7px;
+    border-radius: 6px;
+    width: 120px;
+}
+
+.project-page .app .label .prog span {
+    width: 80px;
+}
+
+.project-page .Portal .label .prog span {
+    width: 190px;
+}
+
+/* End Porject  */
