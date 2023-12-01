@@ -1,96 +1,423 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses</title>
     <!-- Awesome library -->
-    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/all.min.css" />
     <!-- Framework -->
-    <link rel="stylesheet" href="css/frame.css">
+    <link rel="stylesheet" href="css/frame.css" />
     <!-- main css -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&#038;display=swap" rel="stylesheet" />
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&#038;display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="page d-flex">
-        <!-- Start Sidebar -->
-        <div class="sidebar bg-white p-20 relative">
-            <h3 class="relative txt-c mt-0">Morshedy</h3>
-            <ul>
-                <li>
-                    <a class=" d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
-                        <i class="fa-regular fa-chart-bar fa-fw"></i>
-                        <span class="hide-mobile">Dashboard</span>
-                    </a>
-                </li>
-                <li>
-                    <a class=" d-flex align-center fs-14 c-black rad-6 p-10" href="setting.html">
-                        <i class="fa-solid fa-gear fa-fw"></i>
-                        <span class="hide-mobile">Settings</span>
-                    </a>
-                </li>
-                <li>
-                    <a class=" d-flex align-center fs-14 c-black rad-6 p-10" href="profile.html">
-                        <i class="fa-regular fa-user fa-fw"></i>
-                        <span class="hide-mobile">Profile</span>
-                    </a>
-                </li>
-                <li>
-                    <a class=" d-flex align-center fs-14 c-black rad-6 p-10" href="projects.html">
-                        <i class="fa-solid fa-diagram-project fa-fw"></i>
-                        <span class="hide-mobile">Projects</span>
-                    </a>
-                </li>
-                <li>
-                    <a class="active d-flex align-center fs-14 c-black rad-6 p-10" href="courses.html">
-                        <i class="fa-solid fa-graduation-cap fa-fw"></i>
-                        <span class=" active hide-mobile">Courses</span>
-                    </a>
-                </li>
-                <li>
-                    <a class=" d-flex align-center fs-14 c-black rad-6 p-10" href="friends.html">
-                        <i class="fa-regular fa-circle-user fa-fw"></i>
-                        <span class="hide-mobile">Friends</span>
-                    </a>
-                </li>
-                <li>
-                    <a class=" d-flex align-center fs-14 c-black rad-6 p-10" href="files.html">
-                        <i class="fa-regular fa-file fa-fw"></i>
-                        <span class="hide-mobile">Files</span>
-                    </a>
-                </li>
-                <li>
-                    <a class=" d-flex align-center fs-14 c-black rad-6 p-10" href="plans.html">
-                        <i class="fa-regular fa-credit-card fa-fw"></i>
-                        <span class="hide-mobile">Plans</span>
-                    </a>
-                </li>
-            </ul>
+      <!-- Start Sidebar -->
+      <div class="sidebar bg-white p-20 relative">
+        <h3 class="relative txt-c mt-0">Morshedy</h3>
+        <ul>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10"
+              href="index.html"
+            >
+              <i class="fa-regular fa-chart-bar fa-fw"></i>
+              <span class="hide-mobile">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10"
+              href="setting.html"
+            >
+              <i class="fa-solid fa-gear fa-fw"></i>
+              <span class="hide-mobile">Settings</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10"
+              href="profile.html"
+            >
+              <i class="fa-regular fa-user fa-fw"></i>
+              <span class="hide-mobile">Profile</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10"
+              href="projects.html"
+            >
+              <i class="fa-solid fa-diagram-project fa-fw"></i>
+              <span class="hide-mobile">Projects</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="active d-flex align-center fs-14 c-black rad-6 p-10"
+              href="courses.html"
+            >
+              <i class="fa-solid fa-graduation-cap fa-fw"></i>
+              <span class="active hide-mobile">Courses</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10"
+              href="friends.html"
+            >
+              <i class="fa-regular fa-circle-user fa-fw"></i>
+              <span class="hide-mobile">Friends</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10"
+              href="files.html"
+            >
+              <i class="fa-regular fa-file fa-fw"></i>
+              <span class="hide-mobile">Files</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10"
+              href="plans.html"
+            >
+              <i class="fa-regular fa-credit-card fa-fw"></i>
+              <span class="hide-mobile">Plans</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- End Sidebar -->
+      <div class="content w-full">
+        <!-- Start Head -->
+        <div class="head w-full bg-white p-15 flex-between">
+          <form action="" class="relative search">
+            <input type="search" placeholder="Keyword" class="p-10" />
+          </form>
+          <div class="icons d-flex align-center">
+            <span class="notification relative">
+              <i class="fa-regular fa-bell fa-lg"></i>
+            </span>
+            <img decoding="async" src="images/background/avatar.png" alt="" />
+          </div>
         </div>
-        <!-- End Sidebar -->
-        <div class="content w-full">
-            <!-- Start Head -->
-            <div class="head w-full bg-white p-15 flex-between">
-                <form action="" class="relative search">
-                    <input type="search" placeholder="Keyword" class="p-10">
-                </form>
-                <div class="icons d-flex align-center">
-                    <span class="notification relative">
-                        <i class="fa-regular fa-bell fa-lg"></i>
-                    </span>
-                    <img decoding="async" src="images/background/avatar.png" alt="" />
-                </div>
+        <!-- End Head -->
+        <h1 class="relative">Courses</h1>
+        <div class="course-page d-grid gap-20 m-20">
+          <div class="rad-6 bg-white design relative">
+            <img
+              src="images/team/team-01.png"
+              class="team rad-50 absolute"
+              alt="team-01"
+            />
+            <img
+              src="images/courses/course-01.jpg"
+              alt="course-01"
+              class="background"
+            />
+            <div class="p-20">
+              <h4 class="m-0">Mastering Web Design</h4>
+              <p class="mt-15 c-grey fs-14">
+                Master The Art Of Web Designing And Mocking, Prototyping And
+                Creating Web Design Architecture
+              </p>
             </div>
-            <!-- End Head -->
+            <div class="info p-15 relative flex-between">
+              <span class="c-white btn-shape bg-blue title">Course Info</span>
+              <span class="c-grey">
+                <i class="fa-regular fa-user" style="color: #1869f7"></i>
+                950
+              </span>
+              <span class="c-grey">
+                <i class="fa-solid fa-dollar-sign" style="color: #1869f7"></i>
+                170
+              </span>
+            </div>
+          </div>
+          <div class="rad-6 bg-white design relative">
+            <img
+              src="images/team/team-02.png"
+              class="team rad-50 absolute"
+              alt="team-01"
+            />
+            <img
+              src="images/courses/course-02.jpg"
+              alt="course-01"
+              class="background"
+            />
+            <div class="p-20">
+              <h4 class="m-0">Data Structure And Algorithms</h4>
+              <p class="mt-15 c-grey fs-14">
+                Master The Art Of Data Strcuture And Famous Algorithms Like
+                Sorting, Dividing And Conquering
+              </p>
+            </div>
+            <div class="info p-15 relative flex-between">
+              <span class="c-white btn-shape bg-blue title">Course Info</span>
+              <span class="c-grey">
+                <i class="fa-regular fa-user" style="color: #1869f7"></i>
+                1150
+              </span>
+              <span class="c-grey">
+                <i class="fa-solid fa-dollar-sign" style="color: #1869f7"></i>
+                230
+              </span>
+            </div>
+          </div>
+          <div class="rad-6 bg-white design relative">
+            <img
+              src="images/team/team-03.png"
+              class="team rad-50 absolute"
+              alt="team-01"
+            />
+            <img
+              src="images/courses/course-03.jpg"
+              alt="course-01"
+              class="background"
+            />
+            <div class="p-20">
+              <h4 class="m-0">Mastering Web Design</h4>
+              <p class="mt-15 c-grey fs-14">
+                Mastering Responsive Web Design And Media Queries And Know
+                Everything About Breakpoints
+              </p>
+            </div>
+            <div class="info p-15 relative flex-between">
+              <span class="c-white btn-shape bg-blue title">Course Info</span>
+              <span class="c-grey">
+                <i class="fa-regular fa-user" style="color: #1869f7"></i>
+                650
+              </span>
+              <span class="c-grey">
+                <i class="fa-solid fa-dollar-sign" style="color: #1869f7"></i>
+                90
+              </span>
+            </div>
+          </div>
+          <div class="rad-6 bg-white design relative">
+            <img
+              src="images/team/team-03.png"
+              class="team rad-50 absolute"
+              alt="team-01"
+            />
+            <img
+              src="images/courses/course-04.jpg"
+              alt="course-01"
+              class="background"
+            />
+            <div class="p-20">
+              <h4 class="m-0">Mastering Web Design</h4>
+              <p class="mt-15 c-grey fs-14">
+                Mastering Responsive Web Design And Media Queries And Know
+                Everything About Breakpoints
+              </p>
+            </div>
+            <div class="info p-15 relative flex-between">
+              <span class="c-white btn-shape bg-blue title">Course Info</span>
+              <span class="c-grey">
+                <i class="fa-regular fa-user" style="color: #1869f7"></i>
+                650
+              </span>
+              <span class="c-grey">
+                <i class="fa-solid fa-dollar-sign" style="color: #1869f7"></i>
+                90
+              </span>
+            </div>
+          </div>
+          <div class="rad-6 bg-white design relative">
+            <img
+              src="images/team/team-05.png"
+              class="team rad-50 absolute"
+              alt="team-01"
+            />
+            <img
+              src="images/courses/course-01.jpg"
+              alt="course-01"
+              class="background"
+            />
+            <div class="p-20">
+              <h4 class="m-0">Mastering Web Design</h4>
+              <p class="mt-15 c-grey fs-14">
+                Mastering Responsive Web Design And Media Queries And Know
+                Everything About Breakpoints
+              </p>
+            </div>
+            <div class="info p-15 relative flex-between">
+              <span class="c-white btn-shape bg-blue title">Course Info</span>
+              <span class="c-grey">
+                <i class="fa-regular fa-user" style="color: #1869f7"></i>
+                650
+              </span>
+              <span class="c-grey">
+                <i class="fa-solid fa-dollar-sign" style="color: #1869f7"></i>
+                90
+              </span>
+            </div>
+          </div>
+          <div class="rad-6 bg-white design relative">
+            <img
+              src="images/team/team-01.png"
+              class="team rad-50 absolute"
+              alt="team-01"
+            />
+            <img
+              src="images/courses/course-05.jpg"
+              alt="course-01"
+              class="background"
+            />
+            <div class="p-20">
+              <h4 class="m-0">Mastering Web Design</h4>
+              <p class="mt-15 c-grey fs-14">
+                Mastering Responsive Web Design And Media Queries And Know
+                Everything About Breakpoints
+              </p>
+            </div>
+            <div class="info p-15 relative flex-between">
+              <span class="c-white btn-shape bg-blue title">Course Info</span>
+              <span class="c-grey">
+                <i class="fa-regular fa-user" style="color: #1869f7"></i>
+                650
+              </span>
+              <span class="c-grey">
+                <i class="fa-solid fa-dollar-sign" style="color: #1869f7"></i>
+                60
+              </span>
+            </div>
+          </div>
+          <div class="rad-6 bg-white design relative">
+            <img
+              src="images/team/team-03.png"
+              class="team rad-50 absolute"
+              alt="team-01"
+            />
+            <img
+              src="images/courses/course-03.jpg"
+              alt="course-01"
+              class="background"
+            />
+            <div class="p-20">
+              <h4 class="m-0">Mastering Web Design</h4>
+              <p class="mt-15 c-grey fs-14">
+                Mastering Responsive Web Design And Media Queries And Know
+                Everything About Breakpoints
+              </p>
+            </div>
+            <div class="info p-15 relative flex-between">
+              <span class="c-white btn-shape bg-blue title">Course Info</span>
+              <span class="c-grey">
+                <i class="fa-regular fa-user" style="color: #1869f7"></i>
+                250
+              </span>
+              <span class="c-grey">
+                <i class="fa-solid fa-dollar-sign" style="color: #1869f7"></i>
+                90
+              </span>
+            </div>
+          </div>
+          <div class="rad-6 bg-white design relative">
+            <img
+              src="images/team/team-04.png"
+              class="team rad-50 absolute"
+              alt="team-01"
+            />
+            <img
+              src="images/courses/course-04.jpg"
+              alt="course-01"
+              class="background"
+            />
+            <div class="p-20">
+              <h4 class="m-0">Mastering Web Design</h4>
+              <p class="mt-15 c-grey fs-14">
+                Mastering Responsive Web Design And Media Queries And Know
+                Everything About Breakpoints
+              </p>
+            </div>
+            <div class="info p-15 relative flex-between">
+              <span class="c-white btn-shape bg-blue title">Course Info</span>
+              <span class="c-grey">
+                <i class="fa-regular fa-user" style="color: #1869f7"></i>
+                100
+              </span>
+              <span class="c-grey">
+                <i class="fa-solid fa-dollar-sign" style="color: #1869f7"></i>
+                900
+              </span>
+            </div>
+          </div>
+          <div class="rad-6 bg-white design relative">
+            <img
+              src="images/team/team-02.png"
+              class="team rad-50 absolute"
+              alt="team-01"
+            />
+            <img
+              src="images/courses/course-02.jpg"
+              alt="course-02"
+              class="background"
+            />
+            <div class="p-20">
+              <h4 class="m-0">Mastering Web Design</h4>
+              <p class="mt-15 c-grey fs-14">
+                Mastering Responsive Web Design And Media Queries And Know
+                Everything About Breakpoints
+              </p>
+            </div>
+            <div class="info p-15 relative flex-between">
+              <span class="c-white btn-shape bg-blue title">Course Info</span>
+              <span class="c-grey">
+                <i class="fa-regular fa-user" style="color: #1869f7"></i>
+                350
+              </span>
+              <span class="c-grey">
+                <i class="fa-solid fa-dollar-sign" style="color: #1869f7"></i>
+                190
+              </span>
+            </div>
+          </div>
+          <div class="rad-6 bg-white design relative">
+            <img
+              src="images/team/team-05.png"
+              class="team rad-50 absolute"
+              alt="team-01"
+            />
+            <img
+              src="images/courses/course-05.jpg"
+              alt="course-01"
+              class="background"
+            />
+            <div class="p-20">
+              <h4 class="m-0">Mastering Web Design</h4>
+              <p class="mt-15 c-grey fs-14">
+                Mastering Responsive Web Design And Media Queries And Know
+                Everything About Breakpoints
+              </p>
+            </div>
+            <div class="info p-15 relative flex-between">
+              <span class="c-white btn-shape bg-blue title">Course Info</span>
+              <span class="c-grey">
+                <i class="fa-regular fa-user" style="color: #1869f7"></i>
+                750
+              </span>
+              <span class="c-grey">
+                <i class="fa-solid fa-dollar-sign" style="color: #1869f7"></i>
+                50
+              </span>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-
-</body>
-
+  </body>
 </html>

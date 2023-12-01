@@ -108,7 +108,9 @@
 .mt-10 {
     margin-top: 10px;
 }
-
+.mt-15{
+    margin-top: 15px;
+}
 .mt-20 {
     margin-top: 20px;
 }
@@ -272,7 +274,9 @@
 .rad-10 {
     border-radius: 10px;
 }
-
+.rad-50{
+    border-radius: 50%;
+}
 .b-none {
     border: none;
 }
