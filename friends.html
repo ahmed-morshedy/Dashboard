@@ -1,96 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
     <!-- Awesome library -->
-    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/all.min.css" />
     <!-- Framework -->
-    <link rel="stylesheet" href="css/frame.css">
+    <link rel="stylesheet" href="css/frame.css" />
     <!-- main css -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&#038;display=swap" rel="stylesheet" />
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&#038;display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="page d-flex">
-        <!-- Start Sidebar -->
-        <div class="sidebar bg-white p-20 relative">
-            <h3 class="relative txt-c mt-0">Morshedy</h3>
-            <ul>
-                <li>
-                    <a class=" d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
-                        <i class="fa-regular fa-chart-bar fa-fw"></i>
-                        <span class="hide-mobile">Dashboard</span>
-                    </a>
-                </li>
-                <li>
-                    <a class=" d-flex align-center fs-14 c-black rad-6 p-10" href="setting.html">
-                        <i class="fa-solid fa-gear fa-fw"></i>
-                        <span class="hide-mobile">Settings</span>
-                    </a>
-                </li>
-                <li>
-                    <a class=" d-flex align-center fs-14 c-black rad-6 p-10" href="profile.html">
-                        <i class="fa-regular fa-user fa-fw"></i>
-                        <span class="hide-mobile">Profile</span>
-                    </a>
-                </li>
-                <li>
-                    <a class=" d-flex align-center fs-14 c-black rad-6 p-10" href="projects.html">
-                        <i class="fa-solid fa-diagram-project fa-fw"></i>
-                        <span class="hide-mobile">Projects</span>
-                    </a>
-                </li>
-                <li>
-                    <a class=" d-flex align-center fs-14 c-black rad-6 p-10" href="courses.html">
-                        <i class="fa-solid fa-graduation-cap fa-fw"></i>
-                        <span class=" active hide-mobile">Courses</span>
-                    </a>
-                </li>
-                <li>
-                    <a class=" active d-flex align-center fs-14 c-black rad-6 p-10" href="friends.html">
-                        <i class="fa-regular fa-circle-user fa-fw"></i>
-                        <span class="hide-mobile">Friends</span>
-                    </a>
-                </li>
-                <li>
-                    <a class="  d-flex align-center fs-14 c-black rad-6 p-10" href="files.html">
-                        <i class="fa-regular fa-file fa-fw"></i>
-                        <span class="hide-mobile">Files</span>
-                    </a>
-                </li>
-                <li>
-                    <a class=" d-flex align-center fs-14 c-black rad-6 p-10" href="plans.html">
-                        <i class="fa-regular fa-credit-card fa-fw"></i>
-                        <span class="hide-mobile">Plans</span>
-                    </a>
-                </li>
-            </ul>
+      <!-- Start Sidebar -->
+      <div class="sidebar bg-white p-20 relative">
+        <h3 class="relative txt-c mt-0">Morshedy</h3>
+        <ul>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10"
+              href="index.html"
+            >
+              <i class="fa-regular fa-chart-bar fa-fw"></i>
+              <span class="hide-mobile">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10"
+              href="setting.html"
+            >
+              <i class="fa-solid fa-gear fa-fw"></i>
+              <span class="hide-mobile">Settings</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10"
+              href="profile.html"
+            >
+              <i class="fa-regular fa-user fa-fw"></i>
+              <span class="hide-mobile">Profile</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10"
+              href="projects.html"
+            >
+              <i class="fa-solid fa-diagram-project fa-fw"></i>
+              <span class="hide-mobile">Projects</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10"
+              href="courses.html"
+            >
+              <i class="fa-solid fa-graduation-cap fa-fw"></i>
+              <span class="active hide-mobile">Courses</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="active d-flex align-center fs-14 c-black rad-6 p-10"
+              href="friends.html"
+            >
+              <i class="fa-regular fa-circle-user fa-fw"></i>
+              <span class="hide-mobile">Friends</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- End Sidebar -->
+      <div class="content w-full">
+        <!-- Start Head -->
+        <div class="head w-full bg-white p-15 flex-between">
+          <form action="" class="relative search">
+            <input type="search" placeholder="Keyword" class="p-10" />
+          </form>
+          <div class="icons d-flex align-center">
+            <span class="notification relative">
+              <i class="fa-regular fa-bell fa-lg"></i>
+            </span>
+            <img decoding="async" src="images/background/avatar.png" alt="" />
+          </div>
         </div>
-        <!-- End Sidebar -->
-        <div class="content w-full">
-            <!-- Start Head -->
-            <div class="head w-full bg-white p-15 flex-between">
-                <form action="" class="relative search">
-                    <input type="search" placeholder="Keyword" class="p-10">
-                </form>
-                <div class="icons d-flex align-center">
-                    <span class="notification relative">
-                        <i class="fa-regular fa-bell fa-lg"></i>
-                    </span>
-                    <img decoding="async" src="images/background/avatar.png" alt="" />
-                </div>
+        <!-- End Head -->
+        <h1 class="relative">Friends</h1>
+        <div class="d-grid friends-page m-20 gap-20">
+          <div class="friend p-10 rad-6 bg-white relative">
+            <div class="contact">
+              <i class="fa-solid fa-phone"></i>
+              <i class="fa-regular fa-envelope"></i>
             </div>
-            <!-- End Head -->
+            <div class="txt-c">
+              <img decoding="async" src="images/friends/friend-01.jpg" alt="" />
+              <h3 class="mb-0">Ali Hamada</h3>
+              <p class="c-grey fs-14 mt-0">Algorithm Developer</p>
+            </div>
+            <div class="info">
+              <div class="mb-10">
+                <i class="fa-regular fa-face-smile-beam"></i>
+                <span class="fs-14">99 Friend</span>
+              </div>
+              <div class="mb-10">
+                <i class="fa-solid fa-code-commit"></i>
+                <span class="fs-14">15 Projects</span>
+              </div>
+              <div>
+                <i class="fa-solid fa-newspaper"></i>
+                <span class="fs-14"> 25 Articles</span>
+              </div>
+            </div>
+            <div class="control txt-c">
+              <a class="btn-shape bg-blue c-white rad-6 p-10 w-100">
+                profile
+              </a>
+              <a class="btn-shape bg-red c-white rad-6 p-10 w-100"> reomve </a>
+            </div>
+          </div>
+          <div class="friend p-10 rad-6 bg-white relative">
+            <div class="contact">
+              <i class="fa-solid fa-phone"></i>
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+            <div class="txt-c">
+              <img decoding="async" src="images/friends/friend-02.jpg" alt="" />
+              <h3 class="mb-0">Ahmed Ghazal</h3>
+              <p class="c-grey fs-14 mt-0">Back-End Developer</p>
+            </div>
+            <div class="info">
+              <div class="mb-10">
+                <i class="fa-regular fa-face-grin-wide"></i>
+                <span class="fs-14">89 Friend</span>
+              </div>
+              <div class="mb-10">
+                <i class="fa-solid fa-code-commit"></i>
+                <span class="fs-14">36 Projects</span>
+              </div>
+              <div>
+                <i class="fa-solid fa-newspaper"></i>
+                <span class="fs-14"> 42 Articles</span>
+              </div>
+            </div>
+            <div class="control txt-c">
+              <a class="btn-shape bg-blue c-white rad-6 p-10 w-100">
+                profile
+              </a>
+              <a class="btn-shape bg-red c-white rad-6 p-10 w-100"> reomve </a>
+            </div>
+          </div>
+          <div class="friend p-10 rad-6 bg-white relative">
+            <div class="contact">
+              <i class="fa-solid fa-phone"></i>
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+            <div class="txt-c">
+              <img decoding="async" src="images/friends/friend-03.jpg" alt="" />
+              <h3 class="mb-0">Ziad Reda</h3>
+              <p class="c-grey fs-14 mt-0">Mobile Developer</p>
+            </div>
+            <div class="info">
+              <div class="mb-10">
+                <i class="fa-regular fa-face-kiss-beam"></i>
+                <span class="fs-14">76 Friend</span>
+              </div>
+              <div class="mb-10">
+                <i class="fa-solid fa-code-commit"></i>
+                <span class="fs-14">25 Projects</span>
+              </div>
+              <div>
+                <i class="fa-solid fa-newspaper"></i>
+                <span class="fs-14"> 12 Articles</span>
+              </div>
+            </div>
+            <div class="control txt-c">
+              <a class="btn-shape bg-blue c-white rad-6 p-10 w-100">
+                profile
+              </a>
+              <a class="btn-shape bg-red c-white rad-6 p-10 w-100"> reomve </a>
+            </div>
+          </div>
+          <div class="friend p-10 rad-6 bg-white relative">
+            <div class="contact">
+              <i class="fa-solid fa-phone"></i>
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+            <div class="txt-c">
+              <img decoding="async" src="images/friends/friend-04.jpg" alt="" />
+              <h3 class="mb-0">Mostafa Reda</h3>
+              <p class="c-grey fs-14 mt-0">Cloud Developer</p>
+            </div>
+            <div class="info">
+              <div class="mb-10">
+                <i class="fa-regular fa-face-laugh"></i>
+                <span class="fs-14">93 Friend</span>
+              </div>
+              <div class="mb-10">
+                <i class="fa-solid fa-code-commit"></i>
+                <span class="fs-14">5 Projects</span>
+              </div>
+              <div>
+                <i class="fa-solid fa-newspaper"></i>
+                <span class="fs-14"> 3 Articles</span>
+              </div>
+            </div>
+            <div class="control txt-c">
+              <a class="btn-shape bg-blue c-white rad-6 p-10 w-100">
+                profile
+              </a>
+              <a class="btn-shape bg-red c-white rad-6 p-10 w-100"> reomve </a>
+            </div>
+          </div>
+          <div class="friend p-10 rad-6 bg-white relative">
+            <div class="contact">
+              <i class="fa-solid fa-phone"></i>
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+            <div class="txt-c">
+              <img decoding="async" src="images/friends/friend-05.jpg" alt="" />
+              <h3 class="mb-0">Ahmed Hisham Fayed</h3>
+              <p class="c-grey fs-14 mt-0">JavaScript Developer</p>
+            </div>
+            <div class="info">
+              <div class="mb-10">
+                <i class="fa-regular fa-face-smile-beam"></i>
+                <span class="fs-14">299 Friend</span>
+              </div>
+              <div class="mb-10">
+                <i class="fa-solid fa-code-commit"></i>
+                <span class="fs-14">19 Projects</span>
+              </div>
+              <div>
+                <i class="fa-solid fa-newspaper"></i>
+                <span class="fs-14"> 25 Articles</span>
+              </div>
+            </div>
+            <div class="control txt-c">
+              <a class="btn-shape bg-blue c-white rad-6 p-10 w-100">
+                profile
+              </a>
+              <a class="btn-shape bg-red c-white rad-6 p-10 w-100"> reomve </a>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-
-</body>
-
+  </body>
 </html>
