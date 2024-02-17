@@ -450,6 +450,9 @@ ul {
   }
 }
 
+.task {
+  height: fit-content;
+}
 .task > div:not(:last-of-type) {
   border-bottom: 1px solid #ccc;
   margin-bottom: 20px;
@@ -1375,13 +1378,13 @@ ul {
     border-radius: 50%;
     border: 2px solid white;
   }
-  .info,
-  .control {
+  .info {
     border-top: 1px solid #eee;
-    padding-top: 15px;
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
     margin: 15px 0;
   }
-  .control a {
+  a {
     margin-left: 10px;
     cursor: pointer;
   }
@@ -1399,3 +1402,12 @@ ul {
   }
 }
 /* End Friends */
+.no-task {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 20px;
+  color: var(--grey-color);
+  padding: 20px;
+}
